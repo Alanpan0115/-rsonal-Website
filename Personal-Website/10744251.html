@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>個人網頁</title>
+	<style type="text/css" media="screen">
+      @import "index.css"  
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+	<!------------------------------------------------最上面的選單----------------------------------------------------->	
+	<header>
+		<div class="top" > 
+			<nav>
+				<ul>	
+					<img id="top-logo" src="images/logo.jpg" >
+					<a class="link" href="#pic">生活紀錄</a>
+					<a class="link" href="#target">目標/期許</a>
+					<a class="link" href="#study">學歷背景</a>
+					<a class="link" href="#personal" >個人資料/興趣</a> 
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	
+		<!------------------------------------------------------照片輪播----------------------------------------------------->	
+	<article>
+		<section>
+      		<div class="slider_container">
+			<div>
+				<img class="carousel" src="images/coverflow/coverflow01.jpg" alt="pure css3 slider" />
+			</div>
+			<div>
+				<img class="carousel"src="images/coverflow/coverflow02.jpg" alt="pure css3 slider" />
+			</div>
+			<div>
+				<img class="carousel"src="images/coverflow/coverflow03.jpg" alt="pure css3 slider" />
+			</div>
+			<div>
+				<img class="carousel"src="images/coverflow/coverflow04.jpg" alt="pure css3 slider" />
+			</div>
+			<div>
+				<img class="carousel"src="images/coverflow/coverflow05.jpg" alt="pure css3 slider" />
+			</div>
+			</div>
+ 		</section>
+
+		<!----------------------------------------------------基本資料/興趣----------------------------------------------------->	
+
+	
+		<section>
+			<hr id="personal">
+			<h1 class ="title-personal" >個人資料/興趣</h1>
+			<div class="basic">
+				<div>
+					<img class="personal-pic" src="images/personal.jpg" />			
+				</div>
+				<!----------------------------------------------------基本資料-------------------------------------------------->	
+				<div class="introduce" >
+					<h2>
+						<p>基本資料:</p>
+						<p>姓名:潘冠宇</p>
+						<p>生日:89/01/15</p>
+						<p>地址:台北市北投區實踐街</p>
+						
+					</h2>
+				</div>
+				<aside class="h1">
+					<a  target="_blank" href = "https://www.facebook.com/alix.smith.186?ref=bookmarks">
+						<img  class="icon" src="images/icon/fb.png">
+					</a>
+				</aside>
+				<aside class="h2">
+					<a target="_blank" href = "https://www.instagram.com/panguanyu0115/?hl=zh-tw">
+						<img class="icon" src="images/icon/ig.svg">
+					</a>
+				</aside>
+				
+				<!----------------------------------------------------興趣----------------------------------------------------->	
+				<div class="interest">
+					<div>
+						<h2>
+							<p>興趣:</p>
+						</h2>
+						<div class="interest-anime">
+							<ul>
+							<li>
+								<div id="div_01">打電動</div>
+								<div id="div_02">
+									<img alt="图片不存在"
+										src="images/interest/r6.jpg" class="interest-pic"/>
+								</div>
+							</li>
+							<li>
+								<div id="div_01">看動漫</div>
+								<div id="div_02">
+									<img alt="图片不存在"
+										src="images/interest/anime.jpg" class="interest-pic"/>
+								</div>
+							</li>
+							<li>
+								<div id="div_01">聽音樂</div>
+								<div id="div_02">
+									<img alt="图片不存在"
+										src="images/interest/spotify.png" class="interest-pic"/>
+								</div>
+							</li>
+							<li>
+								<div id="div_01">看電影</div>
+								<div id="div_02">
+									<img alt="图片不存在"
+										src="images/interest/movie.jpg" class="interest-pic"/>
+								</div>
+							</li>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+				
+			</div>	
+				
+		</section>
+
+		<!----------------------------------------------------學歷背景----------------------------------------------------->
+
+		<section>
+			<hr id="study">
+			<h1 class ="title-personal" >學歷背景</h1>
+			<div>
+				<div id="study-pic">
+					<img class="tar" src="images/study.jpg">
+				</div>
+				<span class="study-content">
+					<P>國小: 石牌國小</P>
+					<p>國中: 石牌國中</p>
+					<p>高中: 松山高中</p>
+					<p>大學: 中原大學就讀中</p>
+				</span>
+			</div>
+			
+	
+		</section>
+
+		<!----------------------------------------------------目標/期許----------------------------------------------------->
+
+		<section>
+			<hr id="target">
+			<h1 class ="title-personal" >目標/期許</h1>
+			<div>
+				<div id="target-pic">
+					<img class="sd" src="images/target.jpg">
+				</div>
+				<span class="target-content">
+					<P>目標:</P>
+					<p>1.多益700分</p>
+					<p>2.瘦身減重</p>
+					<p>3.順利畢業</p>
+				</span>
+			</div>
+			
+		</section>
+
+		<!----------------------------------------------------生活紀錄----------------------------------------------------->
+
+		<section>
+			<hr id="pic">
+			<h1 class ="title-personal" >生活紀錄</h1>
+			<div data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+				<div class="align">
+					<img class="pad" src="images/pic/1.jpg">
+					<img class="pad" src="images/pic/2.jpg">
+					<img class="pad" src="images/pic/3.jpg">
+				</div>
+			</div>
+
+			<div data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+				<div class="align2">
+					<img class="pad" src="images/pic/4.jpg">
+					<img class="pad" src="images/pic/5.jpg">
+					<img class="pad" src="images/pic/6.jpg">
+				</div>
+			</div>
+			
+		</section>
+	</article>
+ 	<!------------------------------------------------------版權------------------------------------------------------------>	
+
+	<footer>
+		<p>Copyright © 2020 by 10744251</p>
+	</footer>
+	<!------------------------------------------------------向上按鈕------------------------------------------------------------>	
+	<button type="button" id="BackTop" class="toTop-arrow"></button>
+	<script>
+	$(function(){
+		$('#BackTop').click(function(){ 
+			$('html,body').animate({scrollTop:0}, 333);
+		});
+		$(window).scroll(function() {
+			if ( $(this).scrollTop() > 300 ){
+				$('#BackTop').fadeIn(222);
+			} else {
+				$('#BackTop').stop().fadeOut(222);
+			}
+		}).scroll();
+	});
+	</script>
+</body>
+
+
+</html>

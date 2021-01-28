@@ -1,0 +1,366 @@
+		body{
+			background-image: url(images/back1.jpg);
+			background-repeat: no-repeat;
+			background-size:cover;
+			background-attachment:fixed;
+			font-family: "NSimSun"
+		}
+		/* -------------------------------------上方logo和選項------------------------------------------- */
+		header {
+  			background-color: 	#696969;
+  			padding: 2px; 
+  			margin: auto;
+  			width: 90%;
+  			height:70px;
+  			-webkit-box-sizing: border-box;
+     			-moz-box-sizing: border-box;
+         		 	box-sizing: border-box;
+		}
+	
+		#top-logo{
+			height:40px;
+			margin-top:14px;
+			margin-left: 40px;
+			line-height:50px;
+		}
+		.top a {
+			padding: 8px; 
+			display:inline;
+			float: right; 
+    		line-height:50px;
+    		text-decoration:none;
+    		cursor: pointer;
+    		list-style: none;
+    		color: white;
+    		font-size:16px;
+    		letter-spacing:2px;
+    		width:160px;
+
+		}
+		.top a:hover {color:#FF8C00; font-size:22px;} /* 設定滑鼠游標指在連結位置上的樣式顏色、文字大小22px */
+
+		/* -----------------------------------------照片輪播------------------------------------------ */
+		
+		.carousel{
+			margin: 30px auto;
+    		width: 800px;
+   	 		height: 400px;
+    		position: relative;
+    	
+		}
+		.slider_container {
+    		margin: 30px auto;
+    		width: 800px;
+   	 		height: 400px;
+    		position: relative;
+    		border: 20px solid;    
+    		border-color: #fff;
+    		border-bottom-width: 100px;
+    		background-color: #fff;
+    		box-shadow: #666 0 0 5px;
+		}
+
+		.slider_container div {
+    		position: absolute;
+    		top: 0;
+    		left: 0;
+    		opacity: 0;
+    		filter: alpha(opacity=0);
+		}
+		.slider_container div {
+    		-webkit-animation: round 25s linear infinite;
+          	  	animation: round 25s linear infinite;
+		}
+
+		@-webkit-keyframes round {
+    		4% {
+        		opacity: 1;
+        		filter: alpha(opacity=100);
+        		/* 0 - 1秒 淡入*/
+    		}
+    		20% {
+       	 		opacity: 1;
+        		filter: alpha(opacity=100);
+        		/* 1- 5秒靜止*/
+    		}
+    		24% {
+        		opacity: 0;
+        		filter: alpha(opacity=0);
+        		/* 5-6秒淡出*/
+   			}
+		}
+	
+		.slider_container div:nth-child(5) {
+    		-webkit-animation-delay: 0s;
+     	     	  	animation-delay: 0s;
+		}
+
+		.slider_container div:nth-child(4) {
+    		-webkit-animation-delay: 5s;
+    	        	animation-delay: 5s;
+		}
+
+		.slider_container div:nth-child(3) {
+    		-webkit-animation-delay: 10s;
+            	animation-delay: 10s;
+		}
+
+		.slider_container div:nth-child(2) {
+    		-webkit-animation-delay: 15s;
+    	       		animation-delay: 15s;
+		}
+	
+		.slider_container div:nth-child(1) {
+    		-webkit-animation-delay: 20s;
+    	        	animation-delay: 20s;
+		}
+	
+		.slider_container:hover div {
+    		-webkit-animation-play-state: paused;
+     	      	 	animation-play-state: paused;
+		}	
+
+		/* ------------------------------------個人資料/興趣-------------------------------------------- */
+		
+		hr{	
+			margin-top:50px;
+			margin-bottom:50px;
+			margin-left:200px;
+			margin-right:200px;
+    		border: 0;
+    		height: 1px;
+    		background: #FFFFFF;
+    		background-image: linear-gradient(to right, #ccc, #333, #ccc);
+		}	
+		h1{
+			background-color: #A9A9A9;
+			color:white;
+			text-align:center;
+			line-height:60px;
+			height:60px;
+			letter-spacing: 10px;
+			margin-top:50px;
+			margin-bottom:50px;
+			margin-left:120px;
+			margin-right:120px;
+		}
+		.personal-pic{
+			margin-left: 150px;
+			width:300px; 
+			height:400px;
+		}
+		aside.h1{
+			float:right;
+			position:fixed;
+			right:0;
+			top:50%;
+			width:6em;
+			margin-top:-2.5em;
+		}
+		aside.h2{
+			float:right;
+			position:fixed;
+			right:0;
+			top:60%;
+			width:6em;
+			margin-top:-2.5em;
+		}
+		.introduce{
+			width: 27%;
+			position: absolute;
+			left: 500px;
+			top: 840px;	
+			color:white;	
+			line-height:50px;	
+			
+		}
+		
+		
+		.icon{
+			width:50px; 
+			height:50px;
+		}
+		
+
+		/* ------------------------------------興趣-------------------------------------------- */
+		.interest {
+   			color:white;
+			position: absolute;
+			left: 900px;
+			top: 840px;
+			white-space:nowrap;
+			word-spacing: 90px;
+			list-style:none
+		}
+
+		.interest-pic {
+			width: 320px;
+			height: 230px;
+			border-style: solid;
+			border-width: 2px;
+			border-style: solid;
+		}
+ 		
+		.interest-pic li {
+			 
+			position: relative; 
+			
+		}
+		
+ 		* { 
+			margin: 0px;
+			padding: 0px;
+		}
+		
+		
+		.interest li:HOVER {
+			background-color: #FF8C00;
+		}
+ 
+		
+	
+		#div_02 {
+			display: none; 
+			position: absolute; 
+			left: 120px;
+			top: 15px;
+		}
+ 
+		#div_02 img {
+			display: block;
+		}
+ 
+		.interest li:HOVER #div_02 {
+			display: block; 
+		}
+		.interest li{
+			list-style:none
+		}
+		.interest-anime{
+			font-size:25px;
+			
+			line-height:50px;
+		}
+
+		/* ------------------------------------學歷背景-------------------------------------------- */
+
+		#study-pic{
+			display: inline-block;
+			margin-right: 15.6%;
+			margin-top: 50px;
+			float: right;
+		}
+		.sd{
+			width: 400px;
+			height: 300px;
+		}
+		
+		.study-content{
+			display: inline-block;
+			text-align: left;
+			margin-left: 150px;
+			width:400px; 
+			height:300px;
+			padding: 40px;
+			font-size: 30px;
+			color: white;
+			line-height:50px;
+			letter-spacing: 8px;
+			
+		}
+		/*----------------------------------------------------目標/期許-----------------------------------------------------*/
+
+		#target-pic{
+			display: inline-block;
+			margin-left: 15.6%;
+			margin-top: 50px;
+			float: left;
+		}
+		.tar{
+			width: 400px;
+			height: 300px;
+		}
+		
+		.target-content{
+			display: inline-block;
+			text-align: left;
+			margin-left: 300px;
+			width:300px; 
+			height:300px;
+			padding: 50px;
+			font-size: 30px;
+			color: white;
+			line-height:50px;
+			letter-spacing: 8px;
+
+		}
+		/*----------------------------------------------------生活照片-----------------------------------------------------*/
+		
+
+		.pad
+		{	
+			width:320px; 
+			height:280px;
+			padding-left: 10px;
+			padding-right: 10px;
+		}		
+		.align
+		{
+			text-align: center;
+			padding-bottom: 80px;
+		}
+		.align2
+		{
+			text-align: center;
+			padding-bottom: 80px;
+		}
+
+		
+
+		/* -------------------------------------版權資料-------------------------------------------- */
+
+		footer {
+  			padding: 8px;
+  			font-size:20px;
+  			text-align: center;
+  			color: white;
+  			
+  		
+		}
+
+		/* -----------------------------------------向上按鈕--------------------------------------- */
+		.toTop-arrow {
+			width: 2.5rem;
+			height: 2.5rem;
+			padding: 0;
+			margin: 0;
+			border: 0;
+			border-radius: 33%;
+			opacity: 0.6;
+			background: #000;
+			cursor: pointer;
+			position:fixed;
+			right: 3rem;
+			bottom: 5rem;
+			display: none;
+		}
+		.toTop-arrow::before, .toTop-arrow::after {
+			width: 18px;
+			height: 5px;
+			border-radius: 3px;
+			background: #f90;
+			position: absolute;
+			content: "";
+		}
+		.toTop-arrow::before {
+			transform: rotate(-45deg) translate(0, -50%);
+			left: 0.5rem;
+		}
+		.toTop-arrow::after {
+			transform: rotate(45deg) translate(0, -50%);
+			right: 0.5rem;
+		}
+		.toTop-arrow:focus {outline: none;}
+		
+		
+		
